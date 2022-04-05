@@ -21,7 +21,7 @@ https://www.nl-rse.org
 
 ## Updates
 To keep up to date with all our Training & Workshops go to
-https://esciencecenter.us8.list-manage.com/subscribe?u=a0a563ca342f1949246a9f92f&id=31bfc2303d
+https://tinyurl.com/w6zyt867
 and select "Training and Workshops newsletter"
 
 # Exercises
