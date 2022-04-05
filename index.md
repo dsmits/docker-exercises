@@ -27,6 +27,12 @@ and select "Training and Workshops newsletter"
 # Exercises
 Let's go!
 
+## What's your experience?
+Take a minute to think about challenges that you have experienced in using scientific software (or software in general!) for your research. Then, share with your neighbors and try to come up with a list of common gripes or challenges.Take a minute to think about challenges that you have experienced in using scientific software (or software in general!) for your research. Then, share with your neighbors and try to come up with a list of common gripes or challenges.
+
+## Software and Science
+Again, take a minute to think about how the software challenges we’ve discussed could impact (or have impacted!) the quality of your work. Share your thoughts with your neighbors. What can go wrong if our software doesn’t work?
+
 ## Exploring a command
 Run docker --help and pick a command from the list.
 Explore the help prompt for that command. Try to guess how a command
