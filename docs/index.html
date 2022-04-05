@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Introduction to Containers subtitle, additional slides</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Introduction to Containers subtitle, additional
+slides</h1>
+</section>
+
+<section id="who-we-are" class="title-slide slide level1">
+<h1>Who we are</h1>
+
+</section>
+
+<section id="digital-skills-workshops" class="title-slide slide level1">
+<h1>Digital Skills Workshops</h1>
+
+</section>
+
+<section>
+<section id="nl-rse" class="title-slide slide level1">
+<h1>NL-RSE</h1>
+
+</section>
+<section id="upcoming-events" class="title-slide slide level2">
+<h2>Upcoming events</h2>
+
+</section>
+</section>
+<section>
+<section id="exercises" class="title-slide slide level1">
+<h1>Exercises</h1>
+
+</section>
+<section id="introducing-the-docker-command-line"
+class="title-slide slide level2">
+<h2>Introducing the Docker Command Line</h2>
+
+</section>
+<section id="exploring-a-command" class="slide level3">
+<h3>Exploring a command</h3>
+<p>Run docker –help and pick a command from the list. Explore the help
+prompt for that command. Try to guess how a command would work by
+looking at the <code>Usage:</code> section of the prompt.</p>
+</section>
+
+<section id="exploring-and-running-containers"
+class="title-slide slide level2">
+<h2>Exploring and Running Containers</h2>
+
+</section>
+<section id="check-on-your-images" class="slide level3">
+<h3>Check on your images</h3>
+<p>What command would you use to see if the <code>hello-world</code>
+Docker container image had downloaded successfully and was on your
+computer? Give it a try before checking the solution.</p>
+</section>
+<section id="run-the-alpine-docker-container" class="slide level3">
+<h3>Run the Alpine Docker container</h3>
+<p>Try downloading the <code>alpine</code> container image and use it to
+run a container. You can do it in two steps, or one. What are they?</p>
+</section>
+<section id="hello-world-part-2" class="slide level3">
+<h3>Hello World, Part 2</h3>
+<p>Can you run a copy of the <code>alpine</code> container and make it
+print a “hello world” message?</p>
+<p>Give it a try before checking the solution.</p>
+</section>
+<section id="practice-makes-perfect" class="slide level3">
+<h3>Practice Makes Perfect</h3>
+<p>Can you find out the version of Ubuntu installed on the
+<code>ubuntu</code> container image? (Hint: You can use the same command
+as used to find the version of alpine.)</p>
+<p>Can you also find the apt-get program? What does it do? (Hint: try
+passing <code>--help</code> to almost any command will give you more
+information.)</p>
+</section>
+
+<section id="cleaning-up-containers" class="title-slide slide level2">
+<h2>Cleaning Up Containers</h2>
+
+</section>
+<section id="whats-in-a-name" class="slide level3">
+<h3>What’s in a name?</h3>
+<p>How would I download the Docker container image produced by the
+<code>rocker</code> group that has version 3.6.1 of R and the tidyverse
+installed?</p>
+<p>Note: the container image described in this exercise is large and
+won’t be used later in this lesson, so you don’t actually need to pull
+the container image – constructing the correct <code>docker pull</code>
+command is sufficient.</p>
+</section>
+<section id="what-container-image-is-right-for-you"
+class="slide level3">
+<h3>What container image is right for you?</h3>
+<p>Find a Docker container image that’s relevant to you. Take into
+account the suggestions above of what to look for as you evaluate
+options. If you’re unsuccessful in your search, or don’t know what to
+look for, you can use the R or Python container image we’ve already
+seen.</p>
+<p>Once you find a container image, use the skills from the previous
+episode to download the container image and explore it.</p>
+</section>
+
+<section id="creating-your-own-container-images"
+class="title-slide slide level2">
+<h2>Creating Your Own Container Images</h2>
+
+</section>
+<section id="searching-for-help" class="slide level3">
+<h3>Searching for help</h3>
+<p>Can you find instructions for installing R on Alpine Linux? Do they
+work?</p>
+</section>
+<section id="take-a-guess" class="slide level3">
+<h3>Take a guess</h3>
+<p>Do you have any ideas about what we should use to fill in the sample
+Dockerfile to replicate the installation we did above?</p>
+</section>
+<section id="review" class="slide level3">
+<h3>Review!</h3>
+<ol type="1">
+<li>Think back to earlier. What command can you run to check if your
+container image was created successfully? (Hint: what command shows the
+container images on your computer?)</li>
+<li>We didn’t specify a tag for our container image name. What tag did
+Docker automatically use?</li>
+<li>What command will run a container based on the container image
+you’ve created? What should happen by default if you run such a
+container? Can you make it do something different, like print “hello
+world”?</li>
+</ol>
+</section>
+
+<section id="creating-more-complex-container-images"
+class="title-slide slide level2">
+<h2>Creating More Complex Container Images</h2>
+
+</section>
+<section id="running-containers" class="slide level3">
+<h3>Running containers</h3>
+<p>What command would we use to run Python from the
+<code>alpine-python</code> container?</p>
+</section>
+<section id="no-such-file-or-directory" class="slide level3">
+<h3>No such file or directory</h3>
+<p>What does the error message mean? Why might the Python inside the
+container not be able to find or open our script?</p>
+</section>
+<section id="explore-the-script" class="slide level3">
+<h3>Explore the script</h3>
+<p>What happens if you use the <code>docker container run</code> command
+above and put numbers after the script name?</p>
+</section>
+<section id="checking-the-options" class="slide level3">
+<h3>Checking the options</h3>
+<p>Our Docker command has gotten much longer! Can you go through each
+piece of the Docker command above and explain what it does? How would
+you characterize the key components of a Docker command?</p>
+</section>
+<section id="interactive-jobs" class="slide level3">
+<h3>Interactive jobs</h3>
+<p>Try using the directory mount option but run the container
+interactively. Can you find the folder that’s connected to your host
+computer? What’s inside?</p>
+</section>
+<section id="did-it-work" class="slide level3">
+<h3>Did it work?</h3>
+<p>Can you remember how to run a container interactively? Try that with
+this one. Once inside, try running the Python script.</p>
+</section>
+
+<section
+id="containers-in-research-workflows-reproducibility-and-granularity"
+class="title-slide slide level2">
+<h2>Containers in Research Workflows: Reproducibility and
+Granularity</h2>
+
+</section>
+<section id="positives-and-negatives" class="slide level3">
+<h3>Positives and negatives</h3>
+<p>What are the advantages and disadvantages of the two approaches to
+container granularity for research workflows described above? Think
+about this and write a few bullet points for advantages and
+disadvantages for each approach in the course Etherpad.</p>
+</section>
+<section id="next-steps-with-containers" class="slide level3">
+<h3>Next steps with containers</h3>
+<p>Now that we’re at the end of the lesson material, take a moment to
+reflect on what you’ve learned, how it applies to you, and what to do
+next. 1. In your own notes, write down or diagram your understanding of
+Docker containers and container images: concepts, commands, and how they
+work. 2. In the workshop’s shared notes document, write down how you
+think you might use containers in your daily work. If there’s something
+you want to try doing with containers right away, what is a next step
+after this workshop to make that happen?</p>
+</section>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
