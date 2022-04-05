@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>Introduction to Containers subtitle, additional slides</title>
+  <title>Introduction to Containers</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,71 +28,101 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Introduction to Containers subtitle, additional
-slides</h1>
+  <h1 class="title">Introduction to Containers</h1>
+  <p class="subtitle">additional slides</p>
 </section>
 
 <section id="who-we-are" class="title-slide slide level1">
 <h1>Who we are</h1>
-
+<p>https://www.esciencecenter.nl</p>
 </section>
 
 <section id="digital-skills-workshops" class="title-slide slide level1">
 <h1>Digital Skills Workshops</h1>
+<p>https://esciencecenter-digital-skills.github.io</p>
+</section>
 
+<section id="nl-rse" class="title-slide slide level1">
+<h1>NL-RSE</h1>
+<p>https://www.nl-rse.org</p>
 </section>
 
 <section>
-<section id="nl-rse" class="title-slide slide level1">
-<h1>NL-RSE</h1>
-
+<section id="upcoming-events" class="title-slide slide level1">
+<h1>Upcoming events</h1>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Workshop</th>
+<th>Date</th>
+<th>Location</th>
+<th>Registration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GPU Programming</td>
+<td>11 May 2022</td>
+<td>online</td>
+<td>registration opens 19 April</td>
+</tr>
+<tr class="even">
+<td>Parallel Programming in Python</td>
+<td>17 - 18 May 2022</td>
+<td>online</td>
+<td>registration opens 26 April</td>
+</tr>
+<tr class="odd">
+<td>Data Carpentry for Social Sciences with Python</td>
+<td>30 May - 2 June</td>
+<td>Amsterdam</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="upcoming-events" class="title-slide slide level2">
-<h2>Upcoming events</h2>
-
-</section>
-</section>
+<section id="updates" class="slide level2">
+<h2>Updates</h2>
+<p>To keep up to date with all our Training &amp; Workshops go to
+https://esciencecenter.us8.list-manage.com/subscribe?u=a0a563ca342f1949246a9f92f&amp;id=31bfc2303d
+and select “Training and Workshops newsletter”</p>
+</section></section>
 <section>
 <section id="exercises" class="title-slide slide level1">
 <h1>Exercises</h1>
-
+<p>Let’s go!</p>
 </section>
-<section id="introducing-the-docker-command-line"
-class="title-slide slide level2">
-<h2>Introducing the Docker Command Line</h2>
-
-</section>
-<section id="exploring-a-command" class="slide level3">
-<h3>Exploring a command</h3>
+<section id="exploring-a-command" class="slide level2">
+<h2>Exploring a command</h2>
 <p>Run docker –help and pick a command from the list. Explore the help
 prompt for that command. Try to guess how a command would work by
 looking at the <code>Usage:</code> section of the prompt.</p>
 </section>
-
-<section id="exploring-and-running-containers"
-class="title-slide slide level2">
-<h2>Exploring and Running Containers</h2>
-
-</section>
-<section id="check-on-your-images" class="slide level3">
-<h3>Check on your images</h3>
+<section id="check-on-your-images" class="slide level2">
+<h2>Check on your images</h2>
 <p>What command would you use to see if the <code>hello-world</code>
 Docker container image had downloaded successfully and was on your
 computer? Give it a try before checking the solution.</p>
 </section>
-<section id="run-the-alpine-docker-container" class="slide level3">
-<h3>Run the Alpine Docker container</h3>
+<section id="run-the-alpine-docker-container" class="slide level2">
+<h2>Run the Alpine Docker container</h2>
 <p>Try downloading the <code>alpine</code> container image and use it to
 run a container. You can do it in two steps, or one. What are they?</p>
 </section>
-<section id="hello-world-part-2" class="slide level3">
-<h3>Hello World, Part 2</h3>
+<section id="hello-world-part-2" class="slide level2">
+<h2>Hello World, Part 2</h2>
 <p>Can you run a copy of the <code>alpine</code> container and make it
 print a “hello world” message?</p>
 <p>Give it a try before checking the solution.</p>
 </section>
-<section id="practice-makes-perfect" class="slide level3">
-<h3>Practice Makes Perfect</h3>
+<section id="practice-makes-perfect" class="slide level2">
+<h2>Practice Makes Perfect</h2>
 <p>Can you find out the version of Ubuntu installed on the
 <code>ubuntu</code> container image? (Hint: You can use the same command
 as used to find the version of alpine.)</p>
@@ -100,13 +130,8 @@ as used to find the version of alpine.)</p>
 passing <code>--help</code> to almost any command will give you more
 information.)</p>
 </section>
-
-<section id="cleaning-up-containers" class="title-slide slide level2">
-<h2>Cleaning Up Containers</h2>
-
-</section>
-<section id="whats-in-a-name" class="slide level3">
-<h3>What’s in a name?</h3>
+<section id="whats-in-a-name" class="slide level2">
+<h2>What’s in a name?</h2>
 <p>How would I download the Docker container image produced by the
 <code>rocker</code> group that has version 3.6.1 of R and the tidyverse
 installed?</p>
@@ -116,8 +141,8 @@ the container image – constructing the correct <code>docker pull</code>
 command is sufficient.</p>
 </section>
 <section id="what-container-image-is-right-for-you"
-class="slide level3">
-<h3>What container image is right for you?</h3>
+class="slide level2">
+<h2>What container image is right for you?</h2>
 <p>Find a Docker container image that’s relevant to you. Take into
 account the suggestions above of what to look for as you evaluate
 options. If you’re unsuccessful in your search, or don’t know what to
@@ -126,24 +151,18 @@ seen.</p>
 <p>Once you find a container image, use the skills from the previous
 episode to download the container image and explore it.</p>
 </section>
-
-<section id="creating-your-own-container-images"
-class="title-slide slide level2">
-<h2>Creating Your Own Container Images</h2>
-
-</section>
-<section id="searching-for-help" class="slide level3">
-<h3>Searching for help</h3>
+<section id="searching-for-help" class="slide level2">
+<h2>Searching for help</h2>
 <p>Can you find instructions for installing R on Alpine Linux? Do they
 work?</p>
 </section>
-<section id="take-a-guess" class="slide level3">
-<h3>Take a guess</h3>
+<section id="take-a-guess" class="slide level2">
+<h2>Take a guess</h2>
 <p>Do you have any ideas about what we should use to fill in the sample
 Dockerfile to replicate the installation we did above?</p>
 </section>
-<section id="review" class="slide level3">
-<h3>Review!</h3>
+<section id="review" class="slide level2">
+<h2>Review!</h2>
 <ol type="1">
 <li>Think back to earlier. What command can you run to check if your
 container image was created successfully? (Hint: what command shows the
@@ -156,61 +175,47 @@ container? Can you make it do something different, like print “hello
 world”?</li>
 </ol>
 </section>
-
-<section id="creating-more-complex-container-images"
-class="title-slide slide level2">
-<h2>Creating More Complex Container Images</h2>
-
-</section>
-<section id="running-containers" class="slide level3">
-<h3>Running containers</h3>
+<section id="running-containers" class="slide level2">
+<h2>Running containers</h2>
 <p>What command would we use to run Python from the
 <code>alpine-python</code> container?</p>
 </section>
-<section id="no-such-file-or-directory" class="slide level3">
-<h3>No such file or directory</h3>
+<section id="no-such-file-or-directory" class="slide level2">
+<h2>No such file or directory</h2>
 <p>What does the error message mean? Why might the Python inside the
 container not be able to find or open our script?</p>
 </section>
-<section id="explore-the-script" class="slide level3">
-<h3>Explore the script</h3>
+<section id="explore-the-script" class="slide level2">
+<h2>Explore the script</h2>
 <p>What happens if you use the <code>docker container run</code> command
 above and put numbers after the script name?</p>
 </section>
-<section id="checking-the-options" class="slide level3">
-<h3>Checking the options</h3>
+<section id="checking-the-options" class="slide level2">
+<h2>Checking the options</h2>
 <p>Our Docker command has gotten much longer! Can you go through each
 piece of the Docker command above and explain what it does? How would
 you characterize the key components of a Docker command?</p>
 </section>
-<section id="interactive-jobs" class="slide level3">
-<h3>Interactive jobs</h3>
+<section id="interactive-jobs" class="slide level2">
+<h2>Interactive jobs</h2>
 <p>Try using the directory mount option but run the container
 interactively. Can you find the folder that’s connected to your host
 computer? What’s inside?</p>
 </section>
-<section id="did-it-work" class="slide level3">
-<h3>Did it work?</h3>
+<section id="did-it-work" class="slide level2">
+<h2>Did it work?</h2>
 <p>Can you remember how to run a container interactively? Try that with
 this one. Once inside, try running the Python script.</p>
 </section>
-
-<section
-id="containers-in-research-workflows-reproducibility-and-granularity"
-class="title-slide slide level2">
-<h2>Containers in Research Workflows: Reproducibility and
-Granularity</h2>
-
-</section>
-<section id="positives-and-negatives" class="slide level3">
-<h3>Positives and negatives</h3>
+<section id="positives-and-negatives" class="slide level2">
+<h2>Positives and negatives</h2>
 <p>What are the advantages and disadvantages of the two approaches to
 container granularity for research workflows described above? Think
 about this and write a few bullet points for advantages and
 disadvantages for each approach in the course Etherpad.</p>
 </section>
-<section id="next-steps-with-containers" class="slide level3">
-<h3>Next steps with containers</h3>
+<section id="next-steps-with-containers" class="slide level2">
+<h2>Next steps with containers</h2>
 <p>Now that we’re at the end of the lesson material, take a moment to
 reflect on what you’ve learned, how it applies to you, and what to do
 next. 1. In your own notes, write down or diagram your understanding of
@@ -219,8 +224,7 @@ work. 2. In the workshop’s shared notes document, write down how you
 think you might use containers in your daily work. If there’s something
 you want to try doing with containers right away, what is a next step
 after this workshop to make that happen?</p>
-</section>
-</section>
+</section></section>
     </div>
   </div>
 

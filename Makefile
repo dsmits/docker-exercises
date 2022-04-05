@@ -1,7 +1,7 @@
 
 .PHONY: build
 
-pandoc_args += -s -trevealjs
+pandoc_args += -s -trevealjs --slide-level=2
 
 build: docs/index.html
 
