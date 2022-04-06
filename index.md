@@ -1,6 +1,7 @@
 ---
 title: Introduction to Containers 
 subtitle: additional slides
+theme: beige
 ---
 
 # Who we are
